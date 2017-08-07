@@ -3,7 +3,7 @@ import BookList from '../components/BookList.js'
 
 const mapStateToProps = state => {
   return {
-  	books : state
+  	books : state.books
     // books: [{id:10,title:'0000',author:'adafa',read:true,owned:false}]
   }
 }
