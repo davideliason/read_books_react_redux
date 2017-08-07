@@ -1,11 +1,8 @@
-import React,{Component} from 'react';
+import React from 'react';
 
-const Book = ({book}) => (
+const Book = ({title,author}) => (
 		<li>
-			title: {book.title}
-			author: {book.author}
-			read: {book.read}
-			owned: {book.owned}
+			title: {title} author: {author}
 		</li>
 	)
 
