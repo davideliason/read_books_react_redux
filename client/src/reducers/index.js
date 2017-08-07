@@ -5,11 +5,11 @@ const number = (state = initialState, action) => {
 	switch (action.type){
 		case 'ADD_NUM':
 		  return {
-		  	num: action.num + 2
+		  	num: action.num
 		  }
 		  case 'SUBTRACT_NUM':
 		    return {
-		    	num: action.num - 2
+		    	num: action.num
 		    }
 		 default:
 		 	return state 
