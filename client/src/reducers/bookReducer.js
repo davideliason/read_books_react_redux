@@ -6,8 +6,7 @@ const books = (state = [], action) => {
 					id: action.id,
 					title: action.title,
 					author: action.author,
-					read: false,
-					owned: false
+					read: false
 				}
 			]
 		default:
