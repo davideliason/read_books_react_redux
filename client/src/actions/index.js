@@ -5,3 +5,10 @@
  	}
  }
 
+ export const subtractNumber = num => {
+ 	return {
+ 		type: 'SUBTRACT_NUM',
+ 		num
+ 	}
+ }
+
