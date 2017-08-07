@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Button from './Number.js'
+import NumberWrapper from '../containers/NumberWrapper.js'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
        <h3>Read Books</h3>
-       <Button number="2"></Button>
+       <NumberWrapper></NumberWrapper>
       </div>
     );
   }

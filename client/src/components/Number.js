@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 
-const Button = ({onClick, number }) => (
+const Button = ({number }) => (
 		<button>{number}</button>
 	)
 
