@@ -5,7 +5,8 @@ import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 import {createStore} from 'redux'
 import {Provider} from 'react-redux'
-import book_reducer from './reducers/numberReducer.js'
+import book_reducer from './reducers/bookReducer.js'
+import {addBook} from './actions/index.js'
 // import {addNumber,subtractNumber} from './actions/index'
 
 const store = createStore(book_reducer);
@@ -13,6 +14,9 @@ const store = createStore(book_reducer);
 // console.log(store.getState())
 // store.dispatch(subtractNumber(100))
 console.log(store.getState())
+store.dispatch(addBook("2001","Clark"));
+console.log(store.getState())
+
 
 
 ReactDOM.render(<Provider store={store} ><App /></Provider>, document.getElementById('root'));
