@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import book_reducer from './reducers/numberReducer.js'
-import {addNumber,subtractNumber} from './actions/index'
+// import {addNumber,subtractNumber} from './actions/index'
 
 const store = createStore(book_reducer);
 // store.dispatch(addNumber(53));
