@@ -7,6 +7,7 @@ import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import books from './reducers/bookReducer.js'
 import {addBook} from './actions/index.js'
+import AddBook from './containers/addBook.js'
 // import {addNumber,subtractNumber} from './actions/index'
 
 const store = createStore(books);

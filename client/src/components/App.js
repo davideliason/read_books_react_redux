@@ -5,6 +5,8 @@ import './App.css';
 // import AddNumber from '../containers/AddNumber.js'
 // import WrapperBookList from '../container/WrapperBookList.js';
 import WrapperBookList from '../containers/WrapperBookList.js'
+import AddBook from '../containers/addBook.js'
+
 
 class App extends Component {
   render() {
@@ -12,6 +14,7 @@ class App extends Component {
       <div className="App">
        <h3>Read Books</h3>
        <WrapperBookList  />
+       <AddBook />
       </div>
     );
   }
