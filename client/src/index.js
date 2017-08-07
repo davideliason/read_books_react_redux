@@ -7,14 +7,12 @@ import {createStore} from 'redux'
 import {Provider} from 'react-redux'
 import books from './reducers/bookReducer.js'
 import {addBook} from './actions/index.js'
-import AddBook from './containers/addBook.js'
 // import {addNumber,subtractNumber} from './actions/index'
 
 const store = createStore(books);
 // store.dispatch(addNumber(53));
 // console.log(store.getState())
 // store.dispatch(subtractNumber(100))
-store.dispatch(addBook("2002","smith"))
 store.dispatch(addBook("2222","hello"))
 
 console.log(store.getState())

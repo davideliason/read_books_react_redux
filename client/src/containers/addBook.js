@@ -15,12 +15,12 @@ let AddBook = ({dispatch}) => {
  				  	authorTitle.value = ''
  				  }}
  				  >
- 				  <input
+ 				  <input placeholder="author"
  				    ref={node => {
  				    	titleInput = node
  				    }}
  				    />
- 				     <input
+ 				     <input placeholder="title"
  				    ref={node => {
  				    	authorTitle = node
  				    }}
