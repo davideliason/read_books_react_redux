@@ -18,7 +18,9 @@ const store = createStore(bookApp);
 // console.log(store.getState())
 // store.dispatch(subtractNumber(100))
 store.dispatch(addBook("2222","hello"))
-store.dispatch(setFilter("show_everything_buddy"))
+store.dispatch(setFilter("SHOW_ALL"))// works
+// store.dispatch(setFilter("SHOW_READ"))// works
+
 
 console.log(store.getState())
 

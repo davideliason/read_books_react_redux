@@ -1,9 +1,20 @@
 import { connect } from 'react-redux'
 import BookList from '../components/BookList.js'
 
+const setBookFilter = (books,filter) => {
+	switch(filter){
+		case 'SHOW_ALL':
+		  return books
+		case 'SHOW_READ':
+		  return books.filter(t => t.read)
+		default:
+			return books
+	}
+}
+
 const mapStateToProps = state => {
   return {
-  	books : state.books
+  	books : setBookFilter(state.books,state.visibilityFilter)
     // books: [{id:10,title:'0000',author:'adafa',read:true,owned:false}]
   }
 }
