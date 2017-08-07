@@ -14,6 +14,8 @@ const store = createStore(books);
 // console.log(store.getState())
 // store.dispatch(subtractNumber(100))
 store.dispatch(addBook("2002","smith"))
+store.dispatch(addBook("2222","hello"))
+
 console.log(store.getState())
 
 ReactDOM.render(<Provider store={store} ><App /></Provider>, document.getElementById('root'));

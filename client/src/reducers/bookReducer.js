@@ -1,4 +1,4 @@
-const books = (state = [{id:0,title:'2001',author:'jim',read:false,owned:false}], action) => {
+const books = (state = [], action) => {
 	switch(action.type){
 		case 'ADD_BOOK':
 			return [
