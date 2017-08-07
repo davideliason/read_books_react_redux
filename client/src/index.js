@@ -9,9 +9,9 @@ import book_reducer from './reducers'
 import {addNumber,subtractNumber} from './actions/index'
 
 const store = createStore(book_reducer);
-store.dispatch(addNumber(53));
-console.log(store.getState())
-store.dispatch(subtractNumber(100))
+// store.dispatch(addNumber(53));
+// console.log(store.getState())
+// store.dispatch(subtractNumber(100))
 console.log(store.getState())
 
 
