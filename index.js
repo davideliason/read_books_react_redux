@@ -1,10 +1,25 @@
 const express 	= require('express');
+const path 		= require('path');
 const app   	= express();
 
-app.get('/', (req,res) => {
-	res.send("hello world");
+app.use(express.static(path.join(__dirname,'client/public')));
+
+app.get('*', (req,res) => {
+	res.json([{
+  	id: 1,
+  	title: "hello world",
+  	author: "jim bob",
+  	read: false
+  }, {
+  	id: 2,
+  	title: "blue moon",
+  	author: "jumping cow",
+  	read: true
+  }]);
 });
 
-app.listen(5000,() => {
+const port = process.env.PORT || 5000;
+
+app.listen(port,() => {
 	console.log("server up and running");
 });
