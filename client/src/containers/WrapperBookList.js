@@ -1,4 +1,5 @@
 import { connect } from 'react-redux'
+import {toggleRead } from '../actions'
 import BookList from '../components/BookList.js'
 
 const setBookFilter = (books,filter) => {
@@ -12,6 +13,7 @@ const setBookFilter = (books,filter) => {
 	}
 }
 
+
 const mapStateToProps = state => {
   return {
   	books : setBookFilter(state.books,state.visibilityFilter)
@@ -19,8 +21,17 @@ const mapStateToProps = state => {
   }
 }
 
+const mapDispatchToProps = dispatch => {
+	return {
+		onBookClick: id => {
+			dispatch(toggleRead(id))
+		}
+	}
+}
+
 const WrapperBookList = connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(BookList)
 
 
