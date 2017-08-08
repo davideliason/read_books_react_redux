@@ -17,7 +17,7 @@ const store = createStore(bookApp);
 // store.dispatch(addNumber(53));
 // console.log(store.getState())
 // store.dispatch(subtractNumber(100))
-store.dispatch(addBook("2222","hello"))
+store.dispatch(addBook("2001","Arthur C. Clark"))
 store.dispatch(setFilter("SHOW_ALL"))// works
 store.dispatch(toggleRead(0));
 // store.dispatch(setFilter("SHOW_READ"))// works
