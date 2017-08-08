@@ -1,5 +1,4 @@
  let nextBookId = 0
-
  export const addBook = (title,author) => {
  	return {
  		type: 'ADD_BOOK',
@@ -13,6 +12,13 @@
  	return {
  		type: 'SET_VISIBILITY_FILTER',
  		filter: filter
+ 	}
+ }
+
+ export const toggleRead = id => {
+ 	return {
+ 		type: 'TOGGLE_READ',
+ 		id
  	}
  }
 
