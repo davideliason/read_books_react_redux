@@ -9,6 +9,8 @@ const books = (state = [], action) => {
 					read: false
 				}
 			]
+	    case 'TOGGLE_READ':
+	        return state.map(book => (book.id === action.id) ? {...book,read:!book.read} : book )
 		default:
 			return state
 	}
