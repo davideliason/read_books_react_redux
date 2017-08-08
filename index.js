@@ -4,7 +4,7 @@ const app   	= express();
 
 app.use(express.static(path.join(__dirname,'client/public')));
 
-app.get('*', (req,res) => {
+app.get('/api/*', (req,res) => {
 	res.json([{
   	id: 1,
   	title: "hello world",
